@@ -1,0 +1,77 @@
+.btn-secondary {
+  background-color: blueviolet;
+  background: blueviolet;
+}
+
+.body {
+  background-color: #f1f1f1;
+}
+
+.btn-secondary:hover {
+  background-color: rgb(124, 27, 235);
+  background: rgb(124, 27, 235);
+}
+.del {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  font-family: "Prompt", sans-serif;
+}
+div.container4 {
+  height: 10em;
+  position: relative;
+}
+div.container4 h1 {
+  margin: 0;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.line-btn {
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  margin: 5em 0; /* Отступ кнопок */
+  color: #83bec5;
+  transition: all 0.5s;
+  position: relative;
+  text-decoration: none;
+  padding: 15px 60px;
+  border: 3px;
+}
+.line-btn-three::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(131, 190, 197, 0.1);
+  transition: all 0.3s;
+}
+.line-btn-three:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.line-btn-three::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(131, 190, 197, 0.5);
+  transform: scale(1.2, 1.2);
+}
+.line-btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
